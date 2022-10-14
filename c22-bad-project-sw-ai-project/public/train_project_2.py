@@ -118,5 +118,5 @@ history = model.fit(train_ds,
 
 # NOTE: remember to save, or else the result will not be store and I need to re-train again next time.
 
-model.save("mobile_net_v2_5epochs.h5", save_format='h5')
+model.save("./model/mobile_net_v2_5epochs.h5", save_format='h5')
 # NOTE: Another comment save_format is JSON, if I plan to use it in frontend. h5 cannot be loaded in frontend.
