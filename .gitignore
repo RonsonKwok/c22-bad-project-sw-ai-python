@@ -1,2 +1,6 @@
-node_modules
-Testing_express_server
+venv
+testing
+datasets
+__pycache__
+testing_datasets
+model

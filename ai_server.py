@@ -32,7 +32,7 @@ def load():
 def predict_image(image_path:str)->str:
     global model
     print("image_path", image_path)
-    image = cv2.imread('./uploads/1666009967.9982433.jpg')
+    image = cv2.imread(image_path)
     if image is None:
         print("Image not found")
         return
