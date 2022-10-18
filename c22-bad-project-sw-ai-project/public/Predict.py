@@ -2,18 +2,17 @@ import tensorflow as tf
 import Settings
 import os
 import numpy as np
-import train_project
-import mediapipe as mp
-import cv2
+import Train
+# import mediapipe as mp
+# import cv2
 
-mp_face_detection = mp.solutions.face_detection
-mp_drawing = mp.solutions.drawing_utils
+# mp_face_detection = mp.solutions.face_detection
+# mp_drawing = mp.solutions.drawing_utils
 IMAGE_HEIGHT=Settings.IMAGE_HEIGHT
 IMAGE_WIDTH=Settings.IMAGE_WIDTH
 
 def load():
     global model
-    # model=tf.keras.models.load_model(Settings.MODEL_NAME)
     model=tf.keras.models.load_model(Settings.MOBILE_NET_V2)
 
 def predict_file(image_path:str)->float:
@@ -83,5 +82,5 @@ def predict():
                         cv2.waitKey()
     return
 load()
-predict_file("datasets/dimsum/3.png")
+predict_file("testing_datasets/Dessert/icecream1.jpg")
 # predict()

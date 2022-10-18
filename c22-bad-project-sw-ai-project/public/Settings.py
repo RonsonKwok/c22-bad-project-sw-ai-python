@@ -1,6 +1,6 @@
 BATCH_SIZE = 64
 IMAGE_HEIGHT = 160
 IMAGE_WIDTH = 160
-MODEL_NAME="model"
+MODEL_NAME="model.h5"
 UNET="unet_model"
 MOBILE_NET_V2="mobilenet_v2"
