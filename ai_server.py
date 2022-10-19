@@ -77,7 +77,7 @@ async def get_food_identity(request):
 
 @app.post("/predict_server")
 async def test(request):
-    return json("hihi")
+    return json("Accessing Predict AI Server...")
 
 
 app.static("","public")
