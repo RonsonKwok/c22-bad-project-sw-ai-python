@@ -19,6 +19,7 @@ CORS(app) #fetch all sites API
 data_dir ="datasets"
 data_dir = pathlib.Path(data_dir)
 class_names=list(data_dir.glob('*/'))
+print(class_names)
 IMAGE_HEIGHT=Settings.IMAGE_HEIGHT
 IMAGE_WIDTH=Settings.IMAGE_WIDTH
 #camera food detection? (add-on)
