@@ -18,7 +18,8 @@ CORS(app) #fetch all sites API
 
 data_dir ="datasets"
 data_dir = pathlib.Path(data_dir)
-class_names=list(data_dir.glob('*/'))
+# class_names=list(data_dir.glob('*/'))
+class_names=['Bakery','BBQ','Bervage','Burger','Curry','Dessert','Dim_sum','Fast_food','Hot_pot','Japanese','Noodles','Pizza','Seafood','Steak']
 print(class_names)
 IMAGE_HEIGHT=Settings.IMAGE_HEIGHT
 IMAGE_WIDTH=Settings.IMAGE_WIDTH
