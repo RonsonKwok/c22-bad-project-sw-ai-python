@@ -80,8 +80,10 @@ async def test(request):
     return json("Accessing Predict AI Server...")
 
 
-app.static("","public")
-
+app.static("","uploads")
+# app.static("","uploads")
 if __name__ == "__main__":
     load()
     app.run(host="0.0.0.0", port=8000)
+
+print(list(data_dir.glob('*/')))
