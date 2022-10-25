@@ -4,3 +4,4 @@ datasets
 __pycache__
 testing_datasets
 model
+*.log
