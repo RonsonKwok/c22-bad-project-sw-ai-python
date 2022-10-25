@@ -86,6 +86,6 @@ app.static("","uploads")
 # app.static("","uploads")
 if __name__ == "__main__":
     load()
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=8000, fast=True)
 
 print(list(data_dir.glob('*/')))
