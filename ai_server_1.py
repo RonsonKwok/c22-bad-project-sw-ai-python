@@ -65,7 +65,7 @@ async def get_food_identity(request):
     #1 This not using formittable, it send the pic and put into JSON to send to server/ Sanic doesnt accept formittable/ 
     # or can use S3, upload to there and get from S3 like google drive)
     url_blob=request.body 
-    print (url_blob)
+    # print (url_blob)
     #2 JSON becomes an data array
     blob=base64.b64decode(url_blob)
     current_time=time.time()
